@@ -148,10 +148,26 @@ If we have N+1 CPUs then the instructions will be executed in (X*N)/(N+1) time.
 So, if we put 2 CPUs the estimated time will be 667/2 ps. Which means that  the frequency will be 3GHz.
 
 
+**SCALING**
+
+Due to the cpu frequency change from 2GHz to 1.5GHz (1.5 = 3/4 x 2) the simulation seconds must be 4/3 x B (B:default sim_seconds). N = new sim_seconds/default sim_seconds
 
 
+1. **specbzip** : 0.109329 , **N**=1.307
+2. **spechmmer** : 0.008370 , **N**=1.322
+3. **speclibm** : 0.020359, **N**=1.177
+4. **specmcf** : 0.077242  , **N**=1.321
+5. **specsjng** : 0.582132 , **N**=1.12
+
+![image](https://user-images.githubusercontent.com/94965416/145613973-b0cc159f-8456-4ccc-be82-76ff230a2960.png)
 
 
+*SCALING ORDER* spechmmer>specmcf>specbzip>speclibm>specsjng
+
+
+Why is the scaling not perfect?
+
+We can understand that there are mismatching values between the N parameter and 4/3.The pipeline has some stalls or accelerations which can cause 
 
 
 
