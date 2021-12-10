@@ -56,6 +56,9 @@ number of overall MSHR misses + number of overall MSHR misses
 4. **specmcf** : 1.16916
 5. **specsjng** : 10.276660
 
+![image](https://user-images.githubusercontent.com/94965416/145595307-dbcb074d-1265-4a3c-87cc-69c372058eb8.png)
+
+
 **III) MISS RATES**
 
 - L1 ICACHE
