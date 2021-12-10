@@ -86,6 +86,7 @@ number of overall MSHR misses + number of overall MSHR misses
 [graphh.odt](https://github.com/StellaMaria8/Assignment2/files/7693446/graphh.odt)
 
 
+![Screenshot from 2021-12-10 16-39-32](https://user-images.githubusercontent.com/94965416/145591381-cb2875b3-cef8-4f63-b0da-3b615aca50fa.png)
 
 
 
