@@ -167,7 +167,8 @@ Due to the cpu frequency change from 2GHz to 1.5GHz (1.5 = 3/4 x 2) the simulati
 
 Why is the scaling not perfect?
 
-We can understand that there are mismatching values between the N parameter and 4/3.The pipeline has some stalls or accelerations which can cause 
+We can understand that there are mismatching values between the N parameter and 4/3.The pipeline has some stalls or accelerations which can cause different values in simulation seconds.
+
 
 
 
