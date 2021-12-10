@@ -25,7 +25,8 @@ c. NUMBER OF ACCESSESS (L2 CACHE) :
 
 We can estimate the number of l2 cache accesses by these two metrics:
 
-system.cpu.dcache.overall_mshr_misses::total + system.cpu.icache.overall_mshr_misses::total 
+system.cpu.dcache.overall_mshr_misses::total + system.cpu.icache.overall_mshr_misses::total
+
 number of overall MSHR misses + number of overall MSHR misses 
 
 *MSHR* : miss status holding register
