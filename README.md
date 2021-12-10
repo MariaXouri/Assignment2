@@ -99,6 +99,54 @@ number of overall MSHR misses + number of overall MSHR misses
 - We can also observe that _specsjng_ benchmark has much bigger metrics in all aspects in comparison to the other benchmarks.
 
 
+3. 
+
+system_clk.domain -DEFAULT       system_cpu_clk_domain.clock -DEFAULT = 1 / ticks(ps) = 1/500ps = 1/0.5 ns = 2GHz
+
+1. **specbzip** : 1000           1. **specbzip** : 500          
+
+2. **spechmmer** : 1000          2. **spechmmer** : 500  
+
+3. **speclibm** : 1000           3. **speclibm** : 500
+
+4. **specmcf** : 1000            4. **specmcf** : 500
+
+5. **specsjng** : 1000           5. **specsjng** : 500
+
+
+system_clk.domain -1.5GHz       system_cpu_clk_domain.clock -1.5GHz = 1 / ticks(ps) = 1/667ps = 1/0.667 ns = 1.5GHz
+
+1. **specbzip** : 1000           1. **specbzip** : 667          
+
+2. **spechmmer** : 1000          2. **spechmmer** :667 
+
+3. **speclibm** : 1000           3. **speclibm** : 667
+
+4. **specmcf** : 1000            4. **specmcf** : 667
+
+5. **specsjng** : 1000           5. **specsjng** : 667
+
+
+The cpu clock is being affected by the frequency change and it is set to 1.5GHz. The system cock remains the same.
+
+The config.json file shows this difference in this following script.
+
+
+"cpu_clk_domain": {
+            "type": "SrcClockDomain",
+            "cxx_class": "SrcClockDomain",
+            "name": "cpu_clk_domain",
+            "path": "system.cpu_clk_domain",
+            "clock": [
+                667 
+                ]
+                
+If we have N CPUs then  the instructions will be executed in X time.
+
+If we have N+1 CPUs then the instructions will be executed in (X*N)/(N+1) time.
+
+So, if we put 2 CPUs the estimated time will be 667/2 ps. Which means that  the frequency will be 3GHz.
+
 
 
 
