@@ -93,7 +93,7 @@ number of overall MSHR misses + number of overall MSHR misses
 ![image](https://user-images.githubusercontent.com/94965416/145598984-5b673afc-fd17-4bfb-9ca3-a205147a376b.png)
 
 
-**Conclusuion** : 
+**Conclusuion** :  After taking into consideration the three charts, we can understand that there is no analogy  between the CPI  and the simulation seconds between the benchmarks.Additionally, there is no obvious analogy between the CPI and the miss rates of L1 icache and dcache because of their inconsiderable miss rates. On the contrary,  
 
 
 
