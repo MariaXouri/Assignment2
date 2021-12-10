@@ -42,6 +42,12 @@ number of overall MSHR misses + number of overall MSHR misses
 5. **specsjng** : 0.518333
 
 
+
+![image](https://user-images.githubusercontent.com/94965416/145594680-263d3518-00e7-4c03-b6c7-ed58eefe76d7.png)
+
+
+
+
 **II) CPI**
 
 1. **specbzip** : 1.673271
@@ -79,13 +85,6 @@ number of overall MSHR misses + number of overall MSHR misses
 3. **speclibm** : 0.999430 
 4. **specmcf** : 0.209015
 5. **specsjng** : 0.999978
-
-
-[graphh.odt]
-
-![graphh.odt](https://github.com/StellaMaria8/Assignment2/files/7693446/graphh.odt)
-
-![image](https://user-images.githubusercontent.com/94965416/145591907-91899f79-5303-4d4c-824c-ccaf61e84654.png)
 
 
 
