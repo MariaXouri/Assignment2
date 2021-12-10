@@ -90,6 +90,8 @@ number of overall MSHR misses + number of overall MSHR misses
 5. **specsjng** : 0.999978
 
 
+![image](https://user-images.githubusercontent.com/94965416/145598984-5b673afc-fd17-4bfb-9ca3-a205147a376b.png)
+
 
 
 
