@@ -42,15 +42,15 @@ number of overall MSHR misses + number of overall MSHR misses
 5. **specsjng** : 0.518333
 
 
-**II) CPI **
+**II) CPI**
 
 1. **specbzip** : 1.673271
 2. **spechmmer** :1.265776
 3. **speclibm** : 3.457857 
-4. **specmcf** : 1.169160
+4. **specmcf** : 1.16916
 5. **specsjng** : 10.276660
 
-**III) MISS RATES **
+**III) MISS RATES**
 
 - L1 ICACHE
 
