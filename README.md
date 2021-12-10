@@ -31,12 +31,68 @@ number of overall MSHR misses + number of overall MSHR misses
 
 *MSHR* : miss status holding register
 
-#Question 2 
+#Question 2
+
+**I) SIMULATION SECONDS**
+
+1. **specbzip** : 0.083664
+2. **spechmmer** : 0.006329
+3. **speclibm** : 0.017289 
+4. **specmcf** : 0.058458
+5. **specsjng** : 0.518333
+
+
+**II) CPI **
+
+1. **specbzip** : 1.673271
+2. **spechmmer** :1.265776
+3. **speclibm** : 3.457857 
+4. **specmcf** : 1.169160
+5. **specsjng** : 10.276660
+
+**III) MISS RATES **
+
+- L1 ICACHE
+
+1. **specbzip** : 0.000076
+2. **spechmmer** : 0.001121
+3. **speclibm** : 0.000928
+4. **specmcf** : 0.004844
+5. **specsjng** : 0.000015
+
+
+- L1 DCACHE
+
+
+1. **specbzip** : 0.014311
+2. **spechmmer** : 0.003436
+3. **speclibm** : 0.060934 
+4. **specmcf** : 0.002124
+5. **specsjng** : 0.121831
+
+
+- L2 CACHE
+
+
+1. **specbzip** : 0.295248
+2. **spechmmer** : 0.348466
+3. **speclibm** : 0.999430 
+4. **specmcf** : 0.209015
+5. **specsjng** : 0.999978
 
 
 
-BENCHMARK 
-SIM_SECONDS
+
+
+
+
+
+
+
+
+
+
+
 
 
 
