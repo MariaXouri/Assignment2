@@ -93,8 +93,10 @@ number of overall MSHR misses + number of overall MSHR misses
 ![image](https://user-images.githubusercontent.com/94965416/145598984-5b673afc-fd17-4bfb-9ca3-a205147a376b.png)
 
 
-**Conclusuion** :  After taking into consideration the three charts, we can understand that there is no analogy  between the CPI  and the simulation seconds between the benchmarks.Additionally, there is no obvious analogy between the CPI and the miss rates of L1 icache and dcache because of their inconsiderable miss rates. On the contrary,  
+**Conclusuion** : 
+- After taking into consideration the three charts, we can understand that there isn't a significant analogy  between the CPI  and the simulation seconds between the benchmarks.Additionally, there is no obvious analogy between the CPI and the miss rates of L1 icache and dcache because of their inconsiderable miss rates. On the contrary,we observe that the CPI is highly affected by miss rate in l2 cache. L2 cache has bigger miss penalty which justifies the fact that it affects the CPI more than the L1 cache.
 
+- We can also observe that _specsjng_ benchmark has much bigger metrics in all aspects in comparison to the other benchmarks.
 
 
 
