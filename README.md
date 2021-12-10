@@ -81,6 +81,9 @@ number of overall MSHR misses + number of overall MSHR misses
 5. **specsjng** : 0.999978
 
 
+[graphh.odt](https://github.com/StellaMaria8/Assignment2/files/7693432/graphh.odt)
+
+
 
 
 
