@@ -125,24 +125,24 @@ system_clk.domain -DEFAULT ----- system_cpu_clk_domain.clock -DEFAULT = 1 / tick
 
 1. **specbzip** : 1000   -----   1. **specbzip** : 500          
 
-2. **spechmmer** : 1000  -----  2. **spechmmer** : 500  
+2. **spechmmer** : 1000  -----   2. **spechmmer** : 500  
 
-3. **speclibm** : 1000  -----   3. **speclibm** : 500
+3. **speclibm** : 1000   -----   3. **speclibm** : 500
 
-4. **specmcf** : 1000   -----   4. **specmcf** : 500
+4. **specmcf** : 1000    -----   4. **specmcf** : 500
 
-5. **specsjng** : 1000  ----- 5. **specsjng** : 500
+5. **specsjng** : 1000   -----   5. **specsjng** : 500
 
 
-system_clk.domain -1.5GHz ------ system_cpu_clk_domain.clock -1.5GHz = 1 / ticks(ps) = 1/667ps = 1/0.667 ns = 1.5GHz
+system_clk.domain -1.5GHz ---- system_cpu_clk_domain.clock -1.5GHz = 1 / ticks(ps) = 1/667ps = 1/0.667 ns = 1.5GHz
 
-1. **specbzip** : 1000  ----- 1. **specbzip** : 667          
+1. **specbzip** : 1000  ------ 1. **specbzip** : 667          
 
-2. **spechmmer** : 1000 ----- 2. **spechmmer** :667 
+2. **spechmmer** : 1000 ------ 2. **spechmmer** :667 
 
-3. **speclibm** : 1000 ----- 3. **speclibm** : 667
+3. **speclibm** : 1000  ------ 3. **speclibm** : 667
 
-4. **specmcf** : 1000   ------  4. **specmcf** : 667
+4. **specmcf** : 1000   ------ 4. **specmcf** : 667
 
 5. **specsjng** : 1000  ------ 5. **specsjng** : 667
 
