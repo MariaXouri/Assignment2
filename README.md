@@ -266,6 +266,50 @@ l1i=2 l1d=2 l2=4
 
 CPI=1.6381
 
+---------------------------
+
+Different cacheline size:
+
+cachline_size=64 
+
+CPI=1.61
+
+---------------------------
+
+cachline_size=128  
+
+CPI=1.595917
+
+----------------------------------
+
+_So we realized that as we increase the cacheline size, the CPI has a smaller value._
+
+Finally, we put the maximum values so as to achieve a smaller CPI.
+
+L1i cache=256kB
+L1d cache=256kB
+L2 cache=4MB
+associativity=2,2,4
+cachline_size=256
+
+So the CPI is 1.539.
+
+We understand that the higher the caches' size the smaller the CPI value is. The same happens with associativity. 
+It is quite logical because as we increase associativity the miss_rates become smaller and these can cause CPI to have a smaller value. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
