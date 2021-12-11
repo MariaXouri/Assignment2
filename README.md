@@ -13,6 +13,9 @@ a. commited instructions
 5. **specsjng** : 100000000
 
   executed instructions
+  
+  
+  -------------------------------------------------------------------------------------------------
 
 
 
@@ -44,7 +47,9 @@ number of overall MSHR misses + number of overall MSHR misses
 
 *MSHR* : miss status holding register
 
-#Question 2
+--------------------------------------------------------------------------------------------------------------
+
+## Question 2
 
 **I) SIMULATION SECONDS**
 
@@ -111,33 +116,35 @@ number of overall MSHR misses + number of overall MSHR misses
 
 - We can also observe that _specsjng_ benchmark has much bigger metrics in all aspects in comparison to the other benchmarks.
 
-
-3. 
-
-system_clk.domain -DEFAULT       system_cpu_clk_domain.clock -DEFAULT = 1 / ticks(ps) = 1/500ps = 1/0.5 ns = 2GHz
-
-1. **specbzip** : 1000           1. **specbzip** : 500          
-
-2. **spechmmer** : 1000          2. **spechmmer** : 500  
-
-3. **speclibm** : 1000           3. **speclibm** : 500
-
-4. **specmcf** : 1000            4. **specmcf** : 500
-
-5. **specsjng** : 1000           5. **specsjng** : 500
+----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-system_clk.domain -1.5GHz       system_cpu_clk_domain.clock -1.5GHz = 1 / ticks(ps) = 1/667ps = 1/0.667 ns = 1.5GHz
+## Question 3 
 
-1. **specbzip** : 1000           1. **specbzip** : 667          
+system_clk.domain -DEFAULT ----- system_cpu_clk_domain.clock -DEFAULT = 1 / ticks(ps) = 1/500ps = 1/0.5 ns = 2GHz
 
-2. **spechmmer** : 1000          2. **spechmmer** :667 
+1. **specbzip** : 1000   -----   1. **specbzip** : 500          
 
-3. **speclibm** : 1000           3. **speclibm** : 667
+2. **spechmmer** : 1000  -----  2. **spechmmer** : 500  
 
-4. **specmcf** : 1000            4. **specmcf** : 667
+3. **speclibm** : 1000  -----   3. **speclibm** : 500
 
-5. **specsjng** : 1000           5. **specsjng** : 667
+4. **specmcf** : 1000   -----   4. **specmcf** : 500
+
+5. **specsjng** : 1000  ----- 5. **specsjng** : 500
+
+
+system_clk.domain -1.5GHz ------ system_cpu_clk_domain.clock -1.5GHz = 1 / ticks(ps) = 1/667ps = 1/0.667 ns = 1.5GHz
+
+1. **specbzip** : 1000  ----- 1. **specbzip** : 667          
+
+2. **spechmmer** : 1000 ----- 2. **spechmmer** :667 
+
+3. **speclibm** : 1000 ----- 3. **speclibm** : 667
+
+4. **specmcf** : 1000   ------  4. **specmcf** : 667
+
+5. **specsjng** : 1000  ------ 5. **specsjng** : 667
 
 
 The cpu clock is being affected by the frequency change and it is set to 1.5GHz. The system cock remains the same.
@@ -182,7 +189,7 @@ Why is the scaling not perfect?
 
 We can understand that there are mismatching values between the N parameter and 4/3.The pipeline has some stalls or accelerations which can cause different values in simulation seconds.
 
-
+------------------------------------------------------------------------------------------------------------------------------------
 
 ## Part 2
 
