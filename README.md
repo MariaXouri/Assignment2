@@ -212,7 +212,7 @@ Let's take for examble specbzip:
 
 We tried different sizes in l1_dcache:
 
-**SIZE**  **CPI**
+**SIZE**---**CPI**
         
 default: 1.673271
 
