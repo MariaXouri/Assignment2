@@ -222,7 +222,35 @@ default: 1.673271
 
 64kB:    1.639115
 
+
 _So we concluded that as the size increases, the CPI becomes smaller._
+
+
+We also tried different sizes in l1_icache:
+
+default : 1.673271
+
+16kB : 1.639097
+
+64kB : 1.638997
+
+_So we concluded that as the size increases, the CPI becomes smaller._
+
+Then we tried changing the l2 cache. 
+
+default : 1.673271
+
+540kB :  1.702099
+
+2MB : 1.638
+
+_So we concluded that as the l2 size increases, the CPI becomes smaller._
+
+
+
+
+
+
 
 
 
