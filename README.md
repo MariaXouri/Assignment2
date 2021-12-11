@@ -1,8 +1,21 @@
 # Assignment2
 
+## Part 1
+
+### Question 1 
+
+a. commited instructions
+
+1. **specbzip** : 100000001
+2. **spechmmer** : 10000001
+3. **speclibm** : 10000000 
+4. **specmcf** : 100000000
+5. **specsjng** : 100000000
+
+  executed instructions
 
 
-## Question 1 
+
 
 b. REPLACEMENTS (L1 DATA CACHE) :
 
@@ -168,6 +181,22 @@ Due to the cpu frequency change from 2GHz to 1.5GHz (1.5 = 3/4 x 2) the simulati
 Why is the scaling not perfect?
 
 We can understand that there are mismatching values between the N parameter and 4/3.The pipeline has some stalls or accelerations which can cause different values in simulation seconds.
+
+
+
+## Part 2
+
+### Question 1 
+
+*How can we achieve bigger CPI value by changing
+
+- Associativity 
+- Block size 
+- Size allocation για την L1 instruction cache 
+- L1 data cache 
+- L2 cache 
+- Cache line size  ?
+
 
 
 
