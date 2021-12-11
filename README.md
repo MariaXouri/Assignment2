@@ -207,8 +207,22 @@ We can understand that there are mismatching values between the N parameter and 
 - L2 cache 
 - Cache line size  ?
 
+There have been multiple tests in order to figure out how these parameters affect the CPI.
+Let's take for examble specbzip:
 
+We tried different sizes in l1_dcache:
 
+        **CPI**
+        
+default: 1.673271
+
+16kB:    1.706060
+
+32kB:    1.672933
+
+64kB:    1.639115
+
+_So we concluded that as the size increases, the CPI becomes smaller._
 
 
 
