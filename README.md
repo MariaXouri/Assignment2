@@ -246,6 +246,61 @@ default : 1.673271
 
 _So we concluded that as the l2 size increases, the CPI becomes smaller._
 
+Different associativities:
+
+default : 1.673271
+
+l1i=1 l1d=1 l2=2 
+
+CPI=1.661490
+
+----------------
+
+l1i=1 l1d=1 l2=1 
+
+CPI=1.673903
+
+-----------------
+
+l1i=2 l1d=2 l2=4 
+
+CPI=1.6381
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
