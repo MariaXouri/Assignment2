@@ -297,11 +297,80 @@ So the CPI is 1.539.
 We understand that the higher the caches' size the smaller the CPI value is. The same happens with associativity. 
 It is quite logical because as we increase associativity the miss_rates become smaller and these can cause CPI to have a smaller value. 
 
+## Question 2
+
+How each parameter affects CPI ,l1 miss rate and l2 miss rate in every benchmark?
+
+(Miss rates of l1 cache are multiplied with  10^(-4))
+
+
+**SPECBZIB**
+
+
+
+![image](https://user-images.githubusercontent.com/94965416/145718179-47e8a7c0-f0e2-476d-983f-08b25374a9a4.png)
+
+
+![image](https://user-images.githubusercontent.com/94965416/145718605-1c0108d7-fbf9-4e37-b390-4f8cfbe5cbac.png)
+
+
+![image](https://user-images.githubusercontent.com/94965416/145718630-f3316a58-5dfb-400a-957c-8d312d34c3fc.png)
+
+
+
+**SPECHMMER**
+
+
+![image](https://user-images.githubusercontent.com/94965416/145718748-910d8b36-0ec9-4a72-816d-6f8a79057600.png)
+
+
+
+![image](https://user-images.githubusercontent.com/94965416/145718863-2747f373-e2da-47dd-bd1d-62b08392ca27.png)
 
 
 
 
+![image](https://user-images.githubusercontent.com/94965416/145718891-22211921-7ddc-4061-8004-511c4fba59db.png)
 
+
+
+**SPECLIBM**
+
+
+![image](https://user-images.githubusercontent.com/94965416/145718991-72562260-979b-4bc0-a14a-bc8aac902cf7.png)
+
+
+
+![image](https://user-images.githubusercontent.com/94965416/145719036-281f708c-2225-4e73-abf4-995b17bd8df2.png)
+
+
+
+![image](https://user-images.githubusercontent.com/94965416/145719050-d5ce0dfe-7e4b-4afc-989e-72a032d3644b.png)
+
+
+
+**SPECMCF**
+
+
+![image](https://user-images.githubusercontent.com/94965416/145719144-201ffcf6-f7b2-411c-8cde-ad34716cc51a.png)
+
+
+![image](https://user-images.githubusercontent.com/94965416/145719100-efec8155-caa7-4c55-b1fb-dec0cd9ec74a.png)
+
+
+![image](https://user-images.githubusercontent.com/94965416/145719127-cdc4f2cf-1a7a-46b0-ac24-2957e03331b8.png)
+
+
+**SPECSJENG**
+
+
+![image](https://user-images.githubusercontent.com/94965416/145719248-142d1e49-880b-47b0-b985-2c553780efaa.png)
+
+
+![image](https://user-images.githubusercontent.com/94965416/145719204-6c8e7c83-857b-4828-9004-134b862e78cd.png)
+
+
+![image](https://user-images.githubusercontent.com/94965416/145719219-4fc8aa8e-4a63-4ad8-8383-e132dbb23a44.png)
 
 
 
