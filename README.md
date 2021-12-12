@@ -380,7 +380,40 @@ FINDING A FUNCTION WHICH DESCRIBES THE COST (AFTER TAKING INTO CONSIDERATION THE
 Our main purpose is to create a CPU with the smallest possible CPI (best performance) that simultaniously has the smallest possible cost.
 To achieve that, we will create a function that describes the cost.
 
-Part 2 has shown that the main factor that affects the 
+Part 2 has shown that the main factor that affects the CPI value is the cacheline. L1 dcache also plays a big role in changing the CPI.After that, l1i slightly changes te CPI (specmcf).Associativities don't seem to play as much role as the other factors.
+
+Taking into consideration the factors that affect the performance , we can put some multipliers to make obvious which show the impact of each parameter.
+
+x,y,z,w,a can only take the values 0 or 1.
+
+cacheline=5 x  (x=1 if cacheline is under 128kB and x=2 if it is over or equal to 128kB)
+
+l1 dcache=3 y (y=1, if dcache<128kB and y=2 if dcache>=128)
+
+l1 icache=1.5 z (z=1, if icache<128kB and y=2 if icache>=128)
+ 
+l2 cache=1 w  (w=1, if l2 cache<1MB and y=2 if dcache>=1MB)
+
+associativity=1 a (a=1, if associativity<2 and y=2 if associativity>=2)
+
+**PERFORMANCE**=5x + 3y + 1.5z +1w +1a
+
+
+COST function:
+
+We can understand that the bigger the memory is, the  cost is larger. L1 cache has to be quite smaller than l2 cache for a bigger speed. 
+
+So, if we put multipliers in the terms of cost:
+
+l1 dcache =l1 icache = cacheline = 5
+
+l2 cache=3
+
+associativity=1
+
+**COST**=
+
+
 
 
 
