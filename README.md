@@ -373,6 +373,15 @@ How each parameter affects CPI ,l1 miss rate and l2 miss rate in every benchmark
 
 
 
+## Part 3
+
+FINDING A FUNCTION WHICH DESCRIBES THE COST (AFTER TAKING INTO CONSIDERATION THE FACTORS IN PART 2)
+
+Our main purpose is to create a CPU with the smallest possible CPI (best performance) that simultaniously has the smallest possible cost.
+To achieve that, we will create a function that describes the cost.
+
+Part 2 has shown that the main factor that affects the 
+
 
 
 
