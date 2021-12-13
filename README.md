@@ -202,13 +202,13 @@ We can understand that there are mismatching values between the N parameter and 
 
 - Associativity 
 - Block size 
-- Size allocation για την L1 instruction cache 
+- Size allocation for L1 instruction cache 
 - L1 data cache 
 - L2 cache 
 - Cache line size  ?
 
 There have been multiple tests in order to figure out how these parameters affect the CPI.
-Let's take for examble specbzip:
+Let's take for examble SPECBZIP:
 
 We tried different sizes in l1_dcache:
 
