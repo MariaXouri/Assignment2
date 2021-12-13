@@ -394,9 +394,9 @@ l1 icache=1.5 z (z=1, if icache<128kB and y=2 if icache>=128)
  
 l2 cache=1 w  (w=1, if l2 cache<1MB and y=2 if dcache>=1MB)
 
-associativity=1 a (a=1, if associativity<2 and y=2 if associativity>=2)
+associativity=1 q (a=1, if associativity<2 and y=2 if associativity>=2)
 
-**PERFORMANCE**=5x + 3y + 1.5z +1w +1a
+**PERFORMANCE**=5x + 3y + 1.5z +1w +1q
 
 
 COST function:
@@ -405,13 +405,19 @@ We can understand that the bigger the memory is, the  cost is larger. L1 cache h
 
 So, if we put multipliers in the terms of cost:
 
-l1 dcache =l1 icache = cacheline = 5
+l1 dcache = l1 icache = cacheline = 5 b  (b=1 if l1 size is under 128kB and b=2 if it is over or equal to 128kB)
 
-l2 cache=3
 
-associativity=1
+l2 cache=3 c (c=1 if l2 size is under 2MB and c=2 if it is over or equal to 4MB)
 
-**COST**=
+
+associativity=1 d (d=1 if associativity is under 2 and d=2 if it is over or equal to 2)
+
+
+**COST**= 5b + 3c + 1d
+
+The cost has to be as low as possible and the performance has to be as big as possible.
+
 
 
 
