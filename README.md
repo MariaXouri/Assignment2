@@ -385,6 +385,7 @@ Part 2 has shown that the main factor that affects the CPI value is the cachelin
 
 Taking into consideration the factors that affect the performance , we can put some multipliers to make obvious which show the impact of each parameter.
 
+
 x: cacheline size/ maximum cacheline size
 
 y: l1 dcache size/maximum l1 dcache size
