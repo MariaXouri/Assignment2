@@ -310,7 +310,9 @@ How each parameter affects CPI ,l1 miss rate and l2 miss rate in every benchmark
 
 ![image](https://user-images.githubusercontent.com/94965416/145718179-47e8a7c0-f0e2-476d-983f-08b25374a9a4.png)
 
+
 ![image](https://user-images.githubusercontent.com/94965416/145870386-506eba8c-e362-45b7-92d1-49ffc0f138f8.png)
+
 
 <img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/145870438-5c078cd5-4134-46a6-9f79-c26a57ff87ff.png">
 
@@ -321,7 +323,9 @@ How each parameter affects CPI ,l1 miss rate and l2 miss rate in every benchmark
 
 ![image](https://user-images.githubusercontent.com/94965416/145718748-910d8b36-0ec9-4a72-816d-6f8a79057600.png)
 
+
 ![image](https://user-images.githubusercontent.com/94965416/145869703-b17de184-1a1f-4ee1-b542-6574531ff520.png)
+
 
 <img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/145869804-b701ddb7-1ab1-4e61-bb3b-6957092b5cc1.png">
 
@@ -372,9 +376,13 @@ Part 2 has shown that the main factor that affects the CPI value is the cachelin
 Taking into consideration the factors that affect the performance , we can put some multipliers to make obvious which show the impact of each parameter.
 
 x: cacheline size/ maximum cacheline size
+
 y: l1 dcache size/maximum l1 dcache size
+
 z: l1 icache size/maximum l1 icache size
+
 w: l2 cache size/maximum l2 cache size
+
 q: associativity/maximum associativity
 
 
