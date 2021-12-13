@@ -421,7 +421,7 @@ So, if we put multipliers in the terms of cost:
 The cost has to be as low as possible and the performance has to be as big as possible.
 
 
-**EFFECTIVENESS=PERFORMANCE/COST** we want this fraction to be as big as possible (small cost and high performance).
+**EFFECTIVENESS=PERFORMANCE/COST** we want this fraction to be as big as possible (small cost and high performance)...
 
 
 
