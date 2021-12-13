@@ -426,9 +426,14 @@ The cost has to be as low as possible and the performance has to be as big as po
 
 ![image](https://user-images.githubusercontent.com/94965416/145839072-a377d0b5-d155-4bcd-835f-93d96a0dd64b.png)
 
-![image](https://user-images.githubusercontent.com/94965416/145839181-7d4a0fe4-6cd1-40fd-92a0-c1793a824d80.png)
+![image](https://user-images.githubusercontent.com/94965416/145842230-6d296e7a-4829-4a40-805b-021e217fe8b8.png)
 
-![image](https://user-images.githubusercontent.com/94965416/145839283-9e4c5c85-c81b-4107-a1e6-ba95fad08aea.png)
+![image](https://user-images.githubusercontent.com/94965416/145842341-f08946d8-4ef2-40fe-8ebd-b126a3abae78.png)
+
+
+
+![image](https://user-images.githubusercontent.com/94965416/145842525-8ee7e059-f537-4a5b-89fa-d834217ecc34.png)
+
 
 
 According to the type, the most efficient cpu comes from small l1i cache like 32kB or 64kB,
