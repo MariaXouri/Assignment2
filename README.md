@@ -265,6 +265,7 @@ CPI=1.673903
 l1i=2 l1d=2 l2=4 
 
 CPI=1.6381
+
 *So we concluded that as the associativity increases, the CPI becomes smaller.
 
 ---------------------------
