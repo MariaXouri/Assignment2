@@ -424,7 +424,15 @@ The cost has to be as low as possible and the performance has to be as big as po
 **EFFECTIVENESS=PERFORMANCE/COST** we want this fraction to be as big as possible (small cost and high performance)...
 
 
+![image](https://user-images.githubusercontent.com/94965416/145839072-a377d0b5-d155-4bcd-835f-93d96a0dd64b.png)
 
+![image](https://user-images.githubusercontent.com/94965416/145839181-7d4a0fe4-6cd1-40fd-92a0-c1793a824d80.png)
+
+![image](https://user-images.githubusercontent.com/94965416/145839283-9e4c5c85-c81b-4107-a1e6-ba95fad08aea.png)
+
+
+According to the type, the most efficient cpu comes from small l1i cache like 32kB or 64kB,
+small associativities like 2 , mediocre l2 cache like 2MB and big l1d cache like 128kB.
 
 
 
