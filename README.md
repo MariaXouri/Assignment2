@@ -304,27 +304,28 @@ How each parameter affects CPI ,l1 miss rate and l2 miss rate in every benchmark
 
 (Miss rates of l1 cache are multiplied with  10^(-4))
 
-
 **SPECBZIB**
 
 
-![image](https://user-images.githubusercontent.com/94965416/145718179-47e8a7c0-f0e2-476d-983f-08b25374a9a4.png)
+<img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/145879571-e76d6f05-d1c8-4c9f-9be6-314e84fd4fa2.png">
 
 
-![image](https://user-images.githubusercontent.com/94965416/145870386-506eba8c-e362-45b7-92d1-49ffc0f138f8.png)
+<img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/145879509-f1812a3f-28d2-44d8-ba61-754799cdef81.png">
 
 
-<img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/145870438-5c078cd5-4134-46a6-9f79-c26a57ff87ff.png">
+<img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/145879352-32bdad36-ed1d-4256-ac05-3bdc39d82743.png">
+
 
 
 
 **SPECHMMER**
 
 
-![image](https://user-images.githubusercontent.com/94965416/145718748-910d8b36-0ec9-4a72-816d-6f8a79057600.png)
+
+<img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/145879686-5a518c90-d2bf-46fc-afb2-63b88f953823.png">
 
 
-![image](https://user-images.githubusercontent.com/94965416/145869703-b17de184-1a1f-4ee1-b542-6574531ff520.png)
+<img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/145879741-7c79d051-8ab3-47dc-8f18-78d9b413fad2.png">
 
 
 <img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/145869804-b701ddb7-1ab1-4e61-bb3b-6957092b5cc1.png">
@@ -334,9 +335,11 @@ How each parameter affects CPI ,l1 miss rate and l2 miss rate in every benchmark
 **SPECLIBM**
 
 
-![image](https://user-images.githubusercontent.com/94965416/145718991-72562260-979b-4bc0-a14a-bc8aac902cf7.png)
+<img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/145879803-c58cd7c5-4a5c-4503-b635-583eaefe1765.png">
 
-![image](https://user-images.githubusercontent.com/94965416/145869933-76d23ca3-3c05-4a0f-b11b-0f07cc8eebf8.png)
+
+<img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/145879828-ba1f721d-6b12-420c-93e6-2992939c45bd.png">
+
 
 <img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/145869961-74ddd5af-fc2b-492b-9cfd-dbf3a7c3ff63.png">
 
@@ -345,9 +348,12 @@ How each parameter affects CPI ,l1 miss rate and l2 miss rate in every benchmark
 **SPECMCF**
 
 
-![image](https://user-images.githubusercontent.com/94965416/145719144-201ffcf6-f7b2-411c-8cde-ad34716cc51a.png)
 
-![image](https://user-images.githubusercontent.com/94965416/145870108-18db7998-a437-44ca-9eb2-8cb0dd84e215.png)
+<img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/145879905-c023b500-6cfa-4e1a-b5df-1968c4f80ff3.png">
+
+
+<img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/145879945-08d74afe-f6f0-4eab-950d-76b3f099a904.png">
+
 
 <img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/145870143-f26759e1-530b-4af8-b1c6-32d99959f5ad.png">
 
@@ -356,9 +362,12 @@ How each parameter affects CPI ,l1 miss rate and l2 miss rate in every benchmark
 **SPECSJNG**
 
 
-![image](https://user-images.githubusercontent.com/94965416/145719248-142d1e49-880b-47b0-b985-2c553780efaa.png)
 
-![image](https://user-images.githubusercontent.com/94965416/145870258-7dd4d3a3-de2d-49e7-98e3-7946a8306f28.png)
+<img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/145880044-7ce3c61f-55ec-4827-bbfc-08a6d8a79994.png">
+
+
+<img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/145880140-742489f7-8fa7-4048-8406-1d5c93e5df7c.png">
+
 
 <img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/145870277-73c2ee0b-d901-43d9-b88c-063d4fa605c0.png">
 
