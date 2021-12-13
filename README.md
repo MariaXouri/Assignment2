@@ -265,6 +265,7 @@ CPI=1.673903
 l1i=2 l1d=2 l2=4 
 
 CPI=1.6381
+*So we concluded that as the associativity increases, the CPI becomes smaller.
 
 ---------------------------
 
@@ -307,16 +308,11 @@ How each parameter affects CPI ,l1 miss rate and l2 miss rate in every benchmark
 **SPECBZIB**
 
 
-
 ![image](https://user-images.githubusercontent.com/94965416/145718179-47e8a7c0-f0e2-476d-983f-08b25374a9a4.png)
 
+![image](https://user-images.githubusercontent.com/94965416/145870386-506eba8c-e362-45b7-92d1-49ffc0f138f8.png)
 
-![specbizpl1](https://user-images.githubusercontent.com/94965416/145719647-17589d61-055d-47f1-87b1-542689d3481e.png)
-
-
-
-![specbzipl2](https://user-images.githubusercontent.com/94965416/145719659-ff73d52b-7732-4992-971a-12f12119d655.png)
-
+<img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/145870438-5c078cd5-4134-46a6-9f79-c26a57ff87ff.png">
 
 
 
@@ -325,11 +321,9 @@ How each parameter affects CPI ,l1 miss rate and l2 miss rate in every benchmark
 
 ![image](https://user-images.githubusercontent.com/94965416/145718748-910d8b36-0ec9-4a72-816d-6f8a79057600.png)
 
+![image](https://user-images.githubusercontent.com/94965416/145869703-b17de184-1a1f-4ee1-b542-6574531ff520.png)
 
-![spechmmerl1](https://user-images.githubusercontent.com/94965416/145719761-fc1951d5-2774-423f-bf35-f9eb609986f6.png)
-
-
-![spechmmerl2](https://user-images.githubusercontent.com/94965416/145719772-f6d7c7ff-0ace-4d2e-97e2-fb0469d1c8a5.png)
+<img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/145869804-b701ddb7-1ab1-4e61-bb3b-6957092b5cc1.png">
 
 
 
@@ -338,11 +332,10 @@ How each parameter affects CPI ,l1 miss rate and l2 miss rate in every benchmark
 
 ![image](https://user-images.githubusercontent.com/94965416/145718991-72562260-979b-4bc0-a14a-bc8aac902cf7.png)
 
+![image](https://user-images.githubusercontent.com/94965416/145869933-76d23ca3-3c05-4a0f-b11b-0f07cc8eebf8.png)
 
-![spechmmerl1](https://user-images.githubusercontent.com/94965416/145719680-8523a95f-8e16-42f6-97db-1313b033e374.png)
+<img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/145869961-74ddd5af-fc2b-492b-9cfd-dbf3a7c3ff63.png">
 
-
-![spechmmerl2](https://user-images.githubusercontent.com/94965416/145719667-044e83d3-0171-4331-9f9b-b5f6c6950b5c.png)
 
 
 **SPECMCF**
@@ -350,26 +343,20 @@ How each parameter affects CPI ,l1 miss rate and l2 miss rate in every benchmark
 
 ![image](https://user-images.githubusercontent.com/94965416/145719144-201ffcf6-f7b2-411c-8cde-ad34716cc51a.png)
 
+![image](https://user-images.githubusercontent.com/94965416/145870108-18db7998-a437-44ca-9eb2-8cb0dd84e215.png)
 
-![spemcfl1](https://user-images.githubusercontent.com/94965416/145719735-6fbc67ba-8aca-40a6-a616-4a71e84f60d2.png)
-
-
-![specmcfl2](https://user-images.githubusercontent.com/94965416/145719746-f781b3ba-d8d8-4e65-80e2-9e1a2db055a5.png)
+<img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/145870143-f26759e1-530b-4af8-b1c6-32d99959f5ad.png">
 
 
 
-
-
-**SPECSJENG**
+**SPECSJNG**
 
 
 ![image](https://user-images.githubusercontent.com/94965416/145719248-142d1e49-880b-47b0-b985-2c553780efaa.png)
 
+![image](https://user-images.githubusercontent.com/94965416/145870258-7dd4d3a3-de2d-49e7-98e3-7946a8306f28.png)
 
-![specjngl1](https://user-images.githubusercontent.com/94965416/145719797-fea07817-e212-4b6b-8f56-2b9683f6d358.png)
-
-
-![specjngl2](https://user-images.githubusercontent.com/94965416/145719806-c31ff5db-40a2-4134-b3f2-fbb6c1a769fa.png)
+<img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/145870277-73c2ee0b-d901-43d9-b88c-063d4fa605c0.png">
 
 
 
@@ -384,38 +371,43 @@ Part 2 has shown that the main factor that affects the CPI value is the cachelin
 
 Taking into consideration the factors that affect the performance , we can put some multipliers to make obvious which show the impact of each parameter.
 
-x,y,z,w,a can only take the values 1 or 2.
+x: cacheline size/ maximum cacheline size
+y: l1 dcache size/maximum l1 dcache size
+z: l1 icache size/maximum l1 icache size
+w: l2 cache size/maximum l2 cache size
+q: associativity/maximum associativity
 
-- cacheline=5 x  (x=1 if cacheline is under 128kB and x=2 if it is over or equal to 128kB)
 
-- l1 dcache=3 y (y=1, if dcache<128kB and y=2 if dcache>=128)
+- cacheline=5 x 
 
-- l1 icache=1.5 z (z=1, if icache<128kB and y=2 if icache>=128)
+- l1 dcache=3 y 
+
+- l1 icache=1.5 z 
  
-- l2 cache=1 w  (w=1, if l2 cache<1MB and y=2 if dcache>=1MB)
+- l2 cache=1 w  
 
-- associativity=1 q (a=1, if associativity<2 and y=2 if associativity>=2)
+- associativity=1 q 
 
-**PERFORMANCE**=5x + 3y + 1.5z +1w +1q
+**PERFORMANCE** =5x + 3y + 1.5z +1w +1q
 -----------------------------------------
-
-
 COST function:
 
 We can understand that the bigger the memory is, the  cost is larger. L1 cache has to be quite smaller than l2 cache for a bigger speed. 
 
 So, if we put multipliers in the terms of cost:
 
-- l1 dcache = l1 icache = cacheline =**5 b**  (b=1 if l1 size is under 128kB and b=2 if it is over or equal to 128kB)
+- cacheline=5 x 
 
+- l1 dcache=5 y 
 
-- l2 cache=**3 c** (c=1 if l2 size is under 2MB and c=2 if it is over or equal to 4MB)
+- l1 icache=5 z 
 
+- l2 cache=3 w
 
-- associativity=**1 d** (d=1 if associativity is under 2 and d=2 if it is over or equal to 2)
+- associativity=1 q  
+- 
+**COST = 5x + 5y + 5z + 3w + 1q**
 
-
-**COST**= 5b + 3c + 1d
 ------------------------------------------
 
 The cost has to be as low as possible and the performance has to be as big as possible.
@@ -423,22 +415,8 @@ The cost has to be as low as possible and the performance has to be as big as po
 
 **EFFECTIVENESS=PERFORMANCE/COST** we want this fraction to be as big as possible (small cost and high performance)...
 
-
-![image](https://user-images.githubusercontent.com/94965416/145839072-a377d0b5-d155-4bcd-835f-93d96a0dd64b.png)
-
-![image](https://user-images.githubusercontent.com/94965416/145842230-6d296e7a-4829-4a40-805b-021e217fe8b8.png)
-
-![image](https://user-images.githubusercontent.com/94965416/145842341-f08946d8-4ef2-40fe-8ebd-b126a3abae78.png)
-
-
-![image](https://user-images.githubusercontent.com/94965416/145867470-d16ff6bd-68da-4c51-815e-ed6f134049d9.png)
-
-
-
-
-![image](https://user-images.githubusercontent.com/94965416/145842525-8ee7e059-f537-4a5b-89fa-d834217ecc34.png)
-
-
+**EFFECTIVENESS=5x + 3y + 1.5z +1w +1q / 5x + 5y + 5z + 3w + 1q**
+  
 
 According to the type, the most efficient cpu comes from small l1i cache like 32kB or 64kB,
 small associativities like 2 , mediocre l2 cache like 2MB and big l1d cache like 128kB.
