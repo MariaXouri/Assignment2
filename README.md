@@ -384,7 +384,7 @@ Part 2 has shown that the main factor that affects the CPI value is the cachelin
 
 Taking into consideration the factors that affect the performance , we can put some multipliers to make obvious which show the impact of each parameter.
 
-x,y,z,w,a can only take the values 0 or 1.
+x,y,z,w,a can only take the values 1 or 2.
 
 - cacheline=5 x  (x=1 if cacheline is under 128kB and x=2 if it is over or equal to 128kB)
 
