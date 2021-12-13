@@ -304,7 +304,7 @@ How each parameter affects CPI ,l1 miss rate and l2 miss rate in every benchmark
 
 (Miss rates of l1 cache are multiplied with  10^(-4))
 
-**SPECBZIB**
+**SPECBZIP**
 
 
 <img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/145879571-e76d6f05-d1c8-4c9f-9be6-314e84fd4fa2.png">
