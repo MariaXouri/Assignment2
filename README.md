@@ -424,7 +424,7 @@ So, if we put multipliers in the terms of cost:
 - l2 cache=3 w
 
 - associativity=1 q  
-- 
+ 
 **COST = 5x + 5y + 5z + 3w + 1q**
 
 ------------------------------------------
@@ -435,6 +435,22 @@ The cost has to be as low as possible and the performance has to be as big as po
 **EFFECTIVENESS=PERFORMANCE/COST** we want this fraction to be as big as possible (small cost and high performance)...
 
 **EFFECTIVENESS=5x + 3y + 1.5z +1w +1q / 5x + 5y + 5z + 3w + 1q**
+
+
+Some of the values that we tried are:
+
+1) cacheline size = 16
+
+   l1 dcache size = 32 kB
+
+   l1 icache size = 16 kB
+
+   l2 cache size = 1 MB
+
+   associativity = 1
+  
+  EFFECTIVENESS 
+  
   
 
 According to the type, the most efficient cpu comes from small l1i cache like 32kB or 64kB,
