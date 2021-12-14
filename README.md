@@ -477,10 +477,10 @@ Some of the values that we tried are:
    EFFECTIVENESS = 0,607142 
    
    
-   
+  <img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/146065659-f9442bb2-fb10-4d31-a822-df8cc6ecbc50.png">
+ 
    
   
-
 According to the type, the most efficient cpu comes from small l1i cache like 32kB or 64kB,
 small associativities like 2 , mediocre l2 cache like 2MB and big l1d cache like 128kB.
 
