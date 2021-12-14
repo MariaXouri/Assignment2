@@ -449,8 +449,32 @@ Some of the values that we tried are:
 
    associativity = 1
   
-  EFFECTIVENESS 
+  EFFECTIVENESS = 0.56944
   
+  1) cacheline size = 32
+
+   l1 dcache size = 64 kB
+
+   l1 icache size = 32 kB
+
+   l2 cache size = 2 MB
+
+   associativity = 2
+   
+   EFFECTIVENESS = 0.788461
+   
+   
+   1) cacheline size = 32
+
+   l1 dcache size = 256 kB
+
+   l1 icache size = 32 kB
+
+   l2 cache size = 2 MB
+
+   associativity = 4
+   
+   EFFECTIVENESS = 0,607142 
   
 
 According to the type, the most efficient cpu comes from small l1i cache like 32kB or 64kB,
