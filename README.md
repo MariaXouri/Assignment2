@@ -437,6 +437,7 @@ The cost has to be as low as possible and the performance has to be as big as po
 **EFFECTIVENESS=5x + 3y + 1.5z +1w +1q / 5x + 5y + 5z + 3w + 1q**
 
 
+
 Some of the values that we tried are:
 
 1) cacheline size = 16
