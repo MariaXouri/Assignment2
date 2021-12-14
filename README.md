@@ -451,9 +451,10 @@ Some of the values that we tried are:
 
    associativity = 1
   
-  EFFECTIVENESS = 0.56944
+ 
+   EFFECTIVENESS = 0.56944
   
-  1) cacheline size = 32
+2) cacheline size = 32
 
    l1 dcache size = 64 kB
 
@@ -463,10 +464,10 @@ Some of the values that we tried are:
 
    associativity = 2
    
+  
    EFFECTIVENESS = 0.788461
    
-   
-   1) cacheline size = 32
+3) cacheline size = 32
 
    l1 dcache size = 256 kB
 
@@ -476,10 +477,14 @@ Some of the values that we tried are:
 
    associativity = 4
    
+  
    EFFECTIVENESS = 0,607142 
    
    
-  <img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/146065659-f9442bb2-fb10-4d31-a822-df8cc6ecbc50.png">
+ 
+ 
+ 
+ <img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/146065659-f9442bb2-fb10-4d31-a822-df8cc6ecbc50.png">
  
    
   
