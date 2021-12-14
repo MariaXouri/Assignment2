@@ -475,6 +475,10 @@ Some of the values that we tried are:
    associativity = 4
    
    EFFECTIVENESS = 0,607142 
+   
+   
+   
+   
   
 
 According to the type, the most efficient cpu comes from small l1i cache like 32kB or 64kB,
