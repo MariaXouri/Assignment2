@@ -12,7 +12,7 @@ a. commited instructions
 4. **specmcf** : 100000000
 5. **specsjng** : 100000000
 
-  The executed instructions are not equal to commited instructions because after the execution the instructions stay in the buffer which has to check if the orders are speculative. If they are , they commit to memory (committed instructions).
+  The executed instructions are not equal to commited instructions because after the execution,the instructions stay in the buffer. The buffer has to check if the orders are speculative. If they are , they commit to memory (committed instructions).
  
   execute--> re order buffer--> check if speculative---> commited instructions
   
