@@ -12,15 +12,12 @@ a. commited instructions
 4. **specmcf** : 100000000
 5. **specsjng** : 100000000
 
-  The executed instructions are not equal to commited instructions because after the execution,the instructions stay in the buffer. The buffer has to check if the orders are speculative. If they are , they commit to memory (committed instructions).
+  The **executed instructions** are not equal to **commited instructions** because after the execution,the instructions stay in the buffer. The buffer has to check if the orders are speculative. If they are , they commit to memory (committed instructions).
  
-  execute--> re order buffer--> check if speculative---> commited instructions
+  **execute --> re order buffer --> check if speculative ---> commited instructions**
   
 Non-Speculative :  If we don't need the result of the instruction the instruction is non-speculative.
   
-  -------------------------------------------------------------------------------------------------
-
-
 
 
 b. REPLACEMENTS (L1 DATA CACHE) :
@@ -29,9 +26,9 @@ b. REPLACEMENTS (L1 DATA CACHE) :
 2. **spechmmer** : 10275
 3. **speclibm** : 147631 
 4. **specmcf** : 55092
-5. **specsjng** : 5262346
+5. **specsjeng** : 5262346
 
----------------------------------------------------------------------------------------------
+
 
 c. NUMBER OF ACCESSESS (L2 CACHE) :
 
@@ -40,15 +37,15 @@ c. NUMBER OF ACCESSESS (L2 CACHE) :
 2. **spechmmer** : 13327
 3. **speclibm** : 149222 
 4. **specmcf** : 190604
-5. **specsjng** : 5264008
+5. **specsjeng** : 5264008
 
-We can estimate the number of l2 cache accesses by these two metrics:
+_We can estimate the number of l2 cache accesses by these two metrics:_
 
-system.cpu.dcache.overall_mshr_misses::total + system.cpu.icache.overall_mshr_misses::total
+**system.cpu.dcache.overall_mshr_misses::total + system.cpu.icache.overall_mshr_misses::total**
 
-number of overall MSHR misses + number of overall MSHR misses 
+**number of overall MSHR misses + number of overall MSHR misses** 
 
-*MSHR* : miss status holding register
+**MSHR** : miss status holding register
 
 --------------------------------------------------------------------------------------------------------------
 
@@ -116,16 +113,17 @@ number of overall MSHR misses + number of overall MSHR misses
 
 
 **Conclusuion** : 
+
 - After taking into consideration the three charts, we can understand that there isn't a significant analogy  between the CPI  and the simulation seconds between the benchmarks.Additionally, there is no obvious analogy between the CPI and the miss rates of L1 icache and dcache because of their inconsiderable miss rates. On the contrary,we observe that the CPI is highly affected by miss rate in l2 cache. L2 cache has bigger miss penalty which justifies the fact that it affects the CPI more than the L1 cache.
 
-- We can also observe that _specsjng_ benchmark has much bigger metrics in all aspects in comparison to the other benchmarks.
+- We can also observe that _specsjeng_ benchmark has much bigger metrics in all aspects in comparison to the other benchmarks.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ## Question 3 
 
-system_clk.domain -DEFAULT ----- system_cpu_clk_domain.clock -DEFAULT = 1 / ticks(ps) = 1/500ps = 1/0.5 ns = 2GHz
+system_clk.domain - DEFAULT ----- system_cpu_clk_domain.clock -DEFAULT = 1 / ticks(ps) = 1/500ps = 1/0.5 ns = 2GHz
 
 1. **specbzip** : 1000   -----   1. **specbzip** : 500          
 
@@ -138,7 +136,7 @@ system_clk.domain -DEFAULT ----- system_cpu_clk_domain.clock -DEFAULT = 1 / tick
 5. **specsjng** : 1000   -----   5. **specsjng** : 500
 
 
-system_clk.domain -1.5GHz ---- system_cpu_clk_domain.clock -1.5GHz = 1 / ticks(ps) = 1/667ps = 1/0.667 ns = 1.5GHz
+system_clk.domain - 1.5GHz ---- system_cpu_clk_domain.clock -1.5GHz = 1 / ticks(ps) = 1/667ps = 1/0.667 ns = 1.5GHz
 
 1. **specbzip** : 1000  ------ 1. **specbzip** : 667          
 
@@ -152,6 +150,7 @@ system_clk.domain -1.5GHz ---- system_cpu_clk_domain.clock -1.5GHz = 1 / ticks(p
 
 
 The cpu clock is being affected by the frequency change and it is set to 1.5GHz. The system cock remains the same.
+The CPU clock domain is the CPU core's clock while system clock domain is responsible for synchronizing the rest of the system.
 
 The config.json file shows this difference in this following script.
 
