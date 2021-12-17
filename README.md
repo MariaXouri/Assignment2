@@ -190,7 +190,7 @@ Due to the cpu frequency change from 2GHz to 1.5GHz (1.5 = 3/4 x 2) the simulati
 
 Why is the scaling not perfect?
 
-We can understand that there are mismatching values between the N parameter and 4/3.The pipeline has some stalls or accelerations which can cause different values in simulation seconds.
+We can understand that there are mismatching values between the N parameter and 4/3.The pipeline has some stalls or accelerations which can cause different values in simulation seconds.Some benchmarks might also be more affected by frequency changes than others.
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
@@ -214,13 +214,13 @@ We tried different sizes in l1_dcache:
 
 **SIZE**---**CPI**
         
-default: 1.673271
+**default**: 1.673271
 
-16kB:    1.706060
+**16kB**:    1.706060
 
-32kB:    1.672933
+**32kB**:    1.672933
 
-64kB:    1.639115
+**64kB**:    1.639115
 
 
 _So we concluded that as the size increases, the CPI becomes smaller._
@@ -228,43 +228,43 @@ _So we concluded that as the size increases, the CPI becomes smaller._
 
 We also tried different sizes in l1_icache:
 
-default : 1.673271
+**default** : 1.673271
 
-16kB : 1.639097
+**16kB** : 1.639097
 
-64kB : 1.638997
+**64kB** : 1.638997
 
 _So we concluded that as the size increases, the CPI becomes smaller._
 
 Then we tried changing the l2 cache. 
 
-default : 1.673271
+**default** : 1.673271
 
-540kB :  1.702099
+**540kB** :  1.702099
 
-2MB : 1.638
+**2MB** : 1.638
 
 _So we concluded that as the l2 size increases, the CPI becomes smaller._
 
 Different associativities:
 
-default : 1.673271
+**default** : 1.673271
 
 l1i=1 l1d=1 l2=2 
 
-CPI=1.661490
+**CPI=1.661490
 
 ----------------
 
 l1i=1 l1d=1 l2=1 
 
-CPI=1.673903
+**CPI=1.673903
 
 -----------------
 
 l1i=2 l1d=2 l2=4 
 
-CPI=1.6381
+**CPI=1.6381
 
 *So we concluded that as the associativity increases, the CPI becomes smaller.
 
@@ -274,13 +274,13 @@ Different cacheline size:
 
 cachline_size=64 
 
-CPI=1.61
+**CPI=1.61**
 
 ---------------------------
 
 cachline_size=128  
 
-CPI=1.595917
+**CPI=1.595917**
 
 ----------------------------------
 
