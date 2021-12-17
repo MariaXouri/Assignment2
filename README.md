@@ -252,19 +252,19 @@ Different associativities:
 
 l1i=1 l1d=1 l2=2 
 
-**CPI=1.661490
+**CPI=1.661490**
 
 ----------------
 
 l1i=1 l1d=1 l2=1 
 
-**CPI=1.673903
+**CPI=1.673903**
 
 -----------------
 
 l1i=2 l1d=2 l2=4 
 
-**CPI=1.6381
+**CPI=1.6381**
 
 *So we concluded that as the associativity increases, the CPI becomes smaller.
 
@@ -301,9 +301,11 @@ It is quite logical because as we increase associativity the miss_rates become s
 
 ## Question 2
 
-How each parameter affects CPI ,l1 miss rate and l2 miss rate in every benchmark?
+How each parameter affects CPI , l1 miss rate and l2 miss rate in every benchmark?
 
-(Miss rates of l1 cache are multiplied with  10^(-4))
+We took the optimal parameters , that created the best CPU.
+
+(Miss rates of l1 cache are multiplied with  ![image](https://user-images.githubusercontent.com/94965416/146553638-27d15368-829e-49f0-b4a7-3ce1bf36c490.png))
 
 **SPECBZIP**
 
@@ -360,7 +362,7 @@ How each parameter affects CPI ,l1 miss rate and l2 miss rate in every benchmark
 
 
 
-**SPECSJNG**
+**SPECSJENG**
 
 
 
@@ -371,6 +373,13 @@ How each parameter affects CPI ,l1 miss rate and l2 miss rate in every benchmark
 
 
 <img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/145870277-73c2ee0b-d901-43d9-b88c-063d4fa605c0.png">
+
+- **SPECBZIP**: It was most affected by 
+- **SPECHMMER**: It was most affected by
+- **SPECLIBM**: It was most affected by
+- **SPECMCF**: It was most affected by
+- **SPECSJENG**: It was most affected by
+
 
 
 
