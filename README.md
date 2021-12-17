@@ -10,7 +10,7 @@ a. commited instructions
 2. **spechmmer** : 10000001
 3. **speclibm** : 10000000 
 4. **specmcf** : 100000000
-5. **specsjng** : 100000000
+5. **specsjeng** : 100000000
 
   The **executed instructions** are not equal to **commited instructions** because after the execution,the instructions stay in the buffer. The buffer has to check if the orders are speculative. If they are , they commit to memory (committed instructions).
  
@@ -57,7 +57,7 @@ _We can estimate the number of l2 cache accesses by these two metrics:_
 2. **spechmmer** : 0.006329
 3. **speclibm** : 0.017289 
 4. **specmcf** : 0.058458
-5. **specsjng** : 0.518333
+5. **specsjeng** : 0.518333
 
 
 
@@ -72,7 +72,7 @@ _We can estimate the number of l2 cache accesses by these two metrics:_
 2. **spechmmer** :1.265776
 3. **speclibm** : 3.457857 
 4. **specmcf** : 1.16916
-5. **specsjng** : 10.276660
+5. **specsjeng** : 10.276660
 
 
 ![image](https://user-images.githubusercontent.com/94965416/145595307-dbcb074d-1265-4a3c-87cc-69c372058eb8.png)
@@ -86,7 +86,7 @@ _We can estimate the number of l2 cache accesses by these two metrics:_
 2. **spechmmer** : 0.001121
 3. **speclibm** : 0.000928
 4. **specmcf** : 0.004844
-5. **specsjng** : 0.000015
+5. **specsjeng** : 0.000015
 
 
 - L1 DCACHE
@@ -96,7 +96,7 @@ _We can estimate the number of l2 cache accesses by these two metrics:_
 2. **spechmmer** : 0.003436
 3. **speclibm** : 0.060934 
 4. **specmcf** : 0.002124
-5. **specsjng** : 0.121831
+5. **specsjeng** : 0.121831
 
 
 - L2 CACHE
@@ -106,7 +106,7 @@ _We can estimate the number of l2 cache accesses by these two metrics:_
 2. **spechmmer** : 0.348466
 3. **speclibm** : 0.999430 
 4. **specmcf** : 0.209015
-5. **specsjng** : 0.999978
+5. **specsjeng** : 0.999978
 
 
 ![image](https://user-images.githubusercontent.com/94965416/145598984-5b673afc-fd17-4bfb-9ca3-a205147a376b.png)
@@ -133,7 +133,7 @@ system_clk.domain - DEFAULT ----- system_cpu_clk_domain.clock -DEFAULT = 1 / tic
 
 4. **specmcf** : 1000    -----   4. **specmcf** : 500
 
-5. **specsjng** : 1000   -----   5. **specsjng** : 500
+5. **specsjeng** : 1000   -----   5. **specsjeng** : 500
 
 
 system_clk.domain - 1.5GHz ---- system_cpu_clk_domain.clock -1.5GHz = 1 / ticks(ps) = 1/667ps = 1/0.667 ns = 1.5GHz
@@ -146,7 +146,7 @@ system_clk.domain - 1.5GHz ---- system_cpu_clk_domain.clock -1.5GHz = 1 / ticks(
 
 4. **specmcf** : 1000   ------ 4. **specmcf** : 667
 
-5. **specsjng** : 1000  ------ 5. **specsjng** : 667
+5. **specsjeng** : 1000  ------ 5. **specsjeng** : 667
 
 
 The cpu clock is being affected by the frequency change and it is set to 1.5GHz. The system cock remains the same.
@@ -180,7 +180,7 @@ Due to the cpu frequency change from 2GHz to 1.5GHz (1.5 = 3/4 x 2) the simulati
 2. **spechmmer** : 0.008370 , **N**=1.322
 3. **speclibm** : 0.020359, **N**=1.177
 4. **specmcf** : 0.077242  , **N**=1.321
-5. **specsjng** : 0.582132 , **N**=1.12
+5. **specsjeng** : 0.582132 , **N**=1.12
 
 ![image](https://user-images.githubusercontent.com/94965416/145613973-b0cc159f-8456-4ccc-be82-76ff230a2960.png)
 
