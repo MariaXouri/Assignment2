@@ -212,21 +212,20 @@ Let's take for examble SPECBZIP:
 
 We tried different sizes in l1_dcache:
 
-- **SIZE**---**CPI**
+    **SIZE**---**CPI**
         
-**default**: 1.673271
+1. **default**: 1.673271
 
-**16kB**:    1.706060
+   **16kB**:    1.706060
 
-**32kB**:    1.672933
+   **32kB**:    1.672933
 
-**64kB**:    1.639115
+   **64kB**:    1.639115
 
 
 _So we concluded that as the size increases, the CPI becomes smaller._
 
-
-- We also tried different sizes in l1_icache:
+ We also tried different sizes in l1_icache:
 
 **default** : 1.673271
 
@@ -447,6 +446,9 @@ The cost has to be as low as possible and the performance has to be as big as po
 
 
 **EFFECTIVENESS=PERFORMANCE/COST** we want this fraction to be as big as possible (small cost and high performance)...
+
+**EFFECTIVENESS**=![image](https://user-images.githubusercontent.com/94965416/146557463-89f49dc6-eb44-4eb1-b94d-3691dfe51de2.png)
+
 
 **EFFECTIVENESS=5x + 3y + 1.5z +1w +1q / 5x + 5y + 5z + 3w + 1q**
 
