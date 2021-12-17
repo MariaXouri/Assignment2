@@ -185,7 +185,7 @@ Due to the cpu frequency change from 2GHz to 1.5GHz (1.5 = 3/4 x 2) the simulati
 ![image](https://user-images.githubusercontent.com/94965416/145613973-b0cc159f-8456-4ccc-be82-76ff230a2960.png)
 
 
-*SCALING ORDER* spechmmer>specmcf>specbzip>speclibm>specsjng
+*SCALING ORDER* spechmmer > specmcf > specbzip > speclibm > specsjeng
 
 
 Why is the scaling not perfect?
