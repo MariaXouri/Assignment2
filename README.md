@@ -502,6 +502,8 @@ small associativities like 2 , mediocre l2 cache like 2MB and big l1d cache like
 
 
 
+**COMMENTS**
+The Assignment 2 mainly focused on understanding how gem5 works in different benchmarks.The only problem was that it took a lot of time to gather all results due to the big execution time.We learned to search more effectively the information and compare it with real simulation statistics.The assistants were very helpful as well.
 
 
 
