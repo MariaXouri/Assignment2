@@ -210,9 +210,9 @@ We can understand that there are mismatching values between the N parameter and 
 There have been multiple tests in order to figure out how these parameters affect the CPI.
 Let's take for examble SPECBZIP:
 
-We tried different sizes in l1_dcache:
+We tried different sizes in l1_dcache and the CPI is:
 
-    **SIZE**---**CPI**
+    
         
 1. **default**: 1.673271
 
@@ -224,66 +224,67 @@ We tried different sizes in l1_dcache:
 
 
 _So we concluded that as the size increases, the CPI becomes smaller._
-
  We also tried different sizes in l1_icache:
+ 
 
-**default** : 1.673271
+2. **default** : 1.673271
 
-**16kB** : 1.639097
-
-**64kB** : 1.638997
+   **16kB** : 1.639097
+ 
+   **64kB** : 1.638997
 
 _So we concluded that as the size increases, the CPI becomes smaller._
+ Then we tried changing the l2 cache. 
+ 
 
-- Then we tried changing the l2 cache. 
+3. **default** : 1.673271
 
-**default** : 1.673271
+   **540kB** :  1.702099
 
-**540kB** :  1.702099
-
-**2MB** : 1.638
+   **2MB** : 1.638
 
 _So we concluded that as the l2 size increases, the CPI becomes smaller._
 
-- Different associativities:
 
-**default** : 1.673271
+4. Different associativities:
 
-l1i=1 l1d=1 l2=2 
+ **default** : 1.673271
 
-**CPI=1.661490**
+   l1i=1 l1d=1 l2=2 
+
+ **CPI=1.661490**
 
 ![image](https://user-images.githubusercontent.com/94965416/146556989-64e04d15-1450-4fb1-92df-651e09d79c91.png)
 
 
-l1i=1 l1d=1 l2=1 
+5. l1i=1 l1d=1 l2=1 
 
-**CPI=1.673903**
+ **CPI=1.673903**
 
 ![image](https://user-images.githubusercontent.com/94965416/146557011-b7239783-ca07-4886-ac51-e95a33252d7d.png)
 
 
 
-l1i=2 l1d=2 l2=4 
+6. l1i=2 l1d=2 l2=4 
 
-**CPI=1.6381**
+ **CPI=1.6381**
 
 *So we concluded that as the associativity increases, the CPI becomes smaller.
 
 
 
-- Different cacheline size:
+7. Different cacheline size:
 
-cachline_size=64 
+   cachline_size=64 
 
-**CPI=1.61**
+ **CPI=1.61**
 
 ![image](https://user-images.githubusercontent.com/94965416/146557061-2e0f1785-b20c-430f-a3e0-f8cb0fe1f626.png)
 
 
-cachline_size=128  
+8. cachline_size=128  
 
-**CPI=1.595917**
+ **CPI=1.595917**
 
 ![image](https://user-images.githubusercontent.com/94965416/146557079-c2daa400-c119-4e8d-adc8-fb1d919619ce.png)
 
