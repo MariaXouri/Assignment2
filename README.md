@@ -443,7 +443,7 @@ The cost has to be as low as possible and the performance has to be as big as po
 
 **EFFECTIVENESS=PERFORMANCE/COST** we want this fraction to be as big as possible (small cost and high performance)...
 
-   **EFFECTIVENESS**
+   **EFFECTIVENESS** =
 
 ![image](https://user-images.githubusercontent.com/94965416/146557463-89f49dc6-eb44-4eb1-b94d-3691dfe51de2.png)
 
