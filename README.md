@@ -613,6 +613,10 @@ small associativities like 2 , mediocre l2 cache like 2MB and big l1d cache like
 
 
 
+
+
+
+
  
 
 
