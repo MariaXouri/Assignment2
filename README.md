@@ -254,14 +254,12 @@ _So we concluded that as the l2 size increases, the CPI becomes smaller._
 
  **CPI=1.661490**
 
-![image](https://user-images.githubusercontent.com/94965416/146556989-64e04d15-1450-4fb1-92df-651e09d79c91.png)
 
 
 5. l1i=1 l1d=1 l2=1 
 
  **CPI=1.673903**
 
-![image](https://user-images.githubusercontent.com/94965416/146557011-b7239783-ca07-4886-ac51-e95a33252d7d.png)
 
 
 
@@ -279,14 +277,11 @@ _So we concluded that as the l2 size increases, the CPI becomes smaller._
 
  **CPI=1.61**
 
-![image](https://user-images.githubusercontent.com/94965416/146557061-2e0f1785-b20c-430f-a3e0-f8cb0fe1f626.png)
-
 
 8. cachline_size=128  
 
  **CPI=1.595917**
 
-![image](https://user-images.githubusercontent.com/94965416/146557079-c2daa400-c119-4e8d-adc8-fb1d919619ce.png)
 
 
 _So we realized that as we increase the cacheline size, the CPI has a smaller value._
