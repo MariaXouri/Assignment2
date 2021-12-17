@@ -248,24 +248,24 @@ _So we concluded that as the l2 size increases, the CPI becomes smaller._
 
 4. Different associativities:
 
- **default** : 1.673271
+   **default** : 1.673271
 
    l1i=1 l1d=1 l2=2 
 
- **CPI=1.661490**
+   **CPI=1.661490**
 
 
 
 5. l1i=1 l1d=1 l2=1 
 
- **CPI=1.673903**
+   **CPI=1.673903**
 
 
 
 
 6. l1i=2 l1d=2 l2=4 
 
- **CPI=1.6381**
+   **CPI=1.6381**
 
 *So we concluded that as the associativity increases, the CPI becomes smaller.
 
@@ -275,12 +275,12 @@ _So we concluded that as the l2 size increases, the CPI becomes smaller._
 
    cachline_size=64 
 
- **CPI=1.61**
+   **CPI=1.61**
 
 
 8. cachline_size=128  
 
- **CPI=1.595917**
+   **CPI=1.595917**
 
 
 
