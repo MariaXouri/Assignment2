@@ -212,7 +212,7 @@ Let's take for examble SPECBZIP:
 
 We tried different sizes in l1_dcache:
 
-**SIZE**---**CPI**
+- **SIZE**---**CPI**
         
 **default**: 1.673271
 
@@ -226,7 +226,7 @@ We tried different sizes in l1_dcache:
 _So we concluded that as the size increases, the CPI becomes smaller._
 
 
-We also tried different sizes in l1_icache:
+- We also tried different sizes in l1_icache:
 
 **default** : 1.673271
 
@@ -236,7 +236,7 @@ We also tried different sizes in l1_icache:
 
 _So we concluded that as the size increases, the CPI becomes smaller._
 
-Then we tried changing the l2 cache. 
+- Then we tried changing the l2 cache. 
 
 **default** : 1.673271
 
@@ -246,7 +246,7 @@ Then we tried changing the l2 cache.
 
 _So we concluded that as the l2 size increases, the CPI becomes smaller._
 
-Different associativities:
+- Different associativities:
 
 **default** : 1.673271
 
@@ -254,13 +254,16 @@ l1i=1 l1d=1 l2=2
 
 **CPI=1.661490**
 
-----------------
+![image](https://user-images.githubusercontent.com/94965416/146556989-64e04d15-1450-4fb1-92df-651e09d79c91.png)
+
 
 l1i=1 l1d=1 l2=1 
 
 **CPI=1.673903**
 
------------------
+![image](https://user-images.githubusercontent.com/94965416/146557011-b7239783-ca07-4886-ac51-e95a33252d7d.png)
+
+
 
 l1i=2 l1d=2 l2=4 
 
@@ -268,21 +271,23 @@ l1i=2 l1d=2 l2=4
 
 *So we concluded that as the associativity increases, the CPI becomes smaller.
 
----------------------------
 
-Different cacheline size:
+
+- Different cacheline size:
 
 cachline_size=64 
 
 **CPI=1.61**
 
----------------------------
+![image](https://user-images.githubusercontent.com/94965416/146557061-2e0f1785-b20c-430f-a3e0-f8cb0fe1f626.png)
+
 
 cachline_size=128  
 
 **CPI=1.595917**
 
-----------------------------------
+![image](https://user-images.githubusercontent.com/94965416/146557079-c2daa400-c119-4e8d-adc8-fb1d919619ce.png)
+
 
 _So we realized that as we increase the cacheline size, the CPI has a smaller value._
 
@@ -374,11 +379,11 @@ We took the optimal parameters , that created the best CPU.
 
 <img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/145870277-73c2ee0b-d901-43d9-b88c-063d4fa605c0.png">
 
-- **SPECBZIP**: It was most affected by 
-- **SPECHMMER**: It was most affected by
-- **SPECLIBM**: It was most affected by
-- **SPECMCF**: It was most affected by
-- **SPECSJENG**: It was most affected by
+- **SPECBZIP**: It was most affected by l1 dcache size change.Specbzip is a procedure  highly related to memory and that's why we see a big change when we resize l1 dcache. 
+- **SPECHMMER**: It was most affected by l1 dcache size change for the same reason.Spechmmer is used for sequence analysis and that's why it is highly affected by memory size. 
+- **SPECLIBM**: It was most affected by cacheline size change. It is used as a C library for math , which needs big memory size.
+- **SPECMCF**: It was most affected by cacheline size change.The factors we are unvestigating are being increased after changing this parameter.
+- **SPECSJENG**: It was most affected by cacheline size change.It is used as a game engine.As a matter of the fact big cacheline size is optimal for its function, because we want fast and big memory.
 
 
 
