@@ -501,6 +501,9 @@ According to the type, the most efficient cpu comes from small l1i cache like 32
 small associativities like 2 , mediocre l2 cache like 2MB and big l1d cache like 128kB.
 
 
+**OPTIMAL CACHE CONFIGURATION**
+After taking into consideration the diagrams in part 2, we realised that each parameter affects the benchmarks differently. **SPECBZIP** shows a big decline in 
+
 
 **COMMENTS**
 The Assignment 2 mainly focused on understanding how gem5 works in different benchmarks.The only problem was that it took a lot of time to gather all results due to the big execution time.We learned to search more effectively the information and compare it with real simulation statistics.The assistants were very helpful as well.
