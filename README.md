@@ -504,7 +504,8 @@ small associativities like 2 , mediocre l2 cache like 2MB and big l1d cache like
 **OPTIMAL CACHE CONFIGURATION**
 After taking into consideration the diagrams in part 2, we realised that each parameter affects the benchmarks differently. **SPECBZIP**'s CPI shows a big decline after we raise the l1 d cache size.We saw in the EFFECTIVENESS function that l1 dcache has a  big cost.So, the optimum size could be 128kB which is not the biggest size and can also affect the CPI in our favour.Cacheline size also plays a big role in both performance and cost.We could use a 64kB cacheline which is neither big nor small.L2 size affects EFFECTIVNESS in a smaller amount and could be 1MB.Big associativities complicate the system so 2 could be optimal.**SPECHMMER** shows a similar behavior to specbzip, so the same parameters could be ideal.**SPECLIBM**'s CPI shows a big decline after we raise the cacheline.This factor has a lot of cost too ,so we don't want to raise it a lot.64kB could be ideal.The other factors don't affect CPI as much small values could be ideal in order to achieve a small cost.These, could be 64kB l1 icache, 64 kB li dcache , 2M l2 cache , 2 associativity.**SPECMCF** on the other hand, shows an increase in CPI as the cacheline size raises,so 32kB could be ideal.As L1 icache size increases ,CPI decreases so 64kB could be fine.**SPECSJENG** shows that it's being affected by cacheline size so a mediocre size like 64kB could be fine (it has a big cost).
 
-(https://user-images.githubusercontent.com/94965416/146786322-8c58b2f3-d38d-4696-bc71-1984e7adbd7a.png)
+![Screenshot from 2021-12-20 16-49-51](https://user-images.githubusercontent.com/94965416/146786561-acff4cdd-3f6a-4402-a793-d08eb8d121fb.png)
+
 
 
 
