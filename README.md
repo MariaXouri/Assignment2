@@ -475,6 +475,7 @@ Some of the values that we tried are:
 
    associativity = 2
    
+   
  **EFFECTIVENESS = 0.788461**
    
 3) cacheline size = 32
