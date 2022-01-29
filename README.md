@@ -324,8 +324,8 @@ We took the optimal parameters , that created the best CPU.
 **SPECHMMER**
 
 
+![image](https://user-images.githubusercontent.com/94965416/151675917-51af82b0-654a-4ab4-b125-8b18d4806bc8.png)
 
-<img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/145879686-5a518c90-d2bf-46fc-afb2-63b88f953823.png">
 
 
 <img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/145879741-7c79d051-8ab3-47dc-8f18-78d9b413fad2.png">
@@ -491,10 +491,6 @@ Some of the values that we tried are:
  **EFFECTIVENESS = 0.607142**
    
    
- 
- 
- 
- <img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/146065659-f9442bb2-fb10-4d31-a822-df8cc6ecbc50.png">
  
    
   
