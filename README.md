@@ -324,7 +324,9 @@ We took the optimal parameters , that created the best CPU.
 **SPECHMMER**
 
 
-![image](https://user-images.githubusercontent.com/94965416/151675917-51af82b0-654a-4ab4-b125-8b18d4806bc8.png)
+
+![image](https://user-images.githubusercontent.com/94965416/151675961-9df91719-8f42-4ed9-af59-e1b33b3044d4.png)
+
 
 
 
