@@ -325,7 +325,9 @@ We took the optimal parameters , that created the best CPU.
 
 
 
-![image](https://user-images.githubusercontent.com/94965416/151675961-9df91719-8f42-4ed9-af59-e1b33b3044d4.png)
+![image](https://user-images.githubusercontent.com/94965416/151676050-ba1746bb-a169-4c76-b5fa-47ca28779d4e.png)
+
+
 
 
 
