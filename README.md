@@ -88,6 +88,9 @@ _We can estimate the number of l2 cache accesses by these two metrics:_
 4. **specmcf** : 0.004844
 5. **specsjeng** : 0.000015
 
+<img width="454" alt="image" src="https://user-images.githubusercontent.com/94965416/151693657-0d784771-66bd-45df-9669-0646df21f0aa.png">
+
+
 
 - L1 DCACHE
 
@@ -98,6 +101,9 @@ _We can estimate the number of l2 cache accesses by these two metrics:_
 4. **specmcf** : 0.002124
 5. **specsjeng** : 0.121831
 
+<img width="455" alt="image" src="https://user-images.githubusercontent.com/94965416/151693673-617d30c9-349c-4966-b9ff-0b2fe111d8a9.png">
+
+
 
 - L2 CACHE
 
@@ -107,6 +113,10 @@ _We can estimate the number of l2 cache accesses by these two metrics:_
 3. **speclibm** : 0.999430 
 4. **specmcf** : 0.209015
 5. **specsjeng** : 0.999978
+
+
+<img width="455" alt="image" src="https://user-images.githubusercontent.com/94965416/151693688-1d8e79f2-d415-45ab-9174-08a36724fc40.png">
+
 
 
 ![image](https://user-images.githubusercontent.com/94965416/145598984-5b673afc-fd17-4bfb-9ca3-a205147a376b.png)
